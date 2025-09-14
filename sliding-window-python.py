@@ -95,3 +95,7 @@ for R in range(len(arr)) : # our right pointer will move by going through a for 
 # V1 DONE 
 
 # ARTICLE PART 
+
+# check out this article 
+
+# https://www.geeksforgeeks.org/dsa/window-sliding-technique/
