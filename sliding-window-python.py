@@ -1,5 +1,10 @@
 # the sliding window is an algorithm that is mainly used when trying to find sub-arrays or sub-strings 
 # they are very useful and transform time complexity from O(N^2) to O(N) 
+# there are 2 types of sliding window fixed and dynamic 
+
+# fixed sliding window :
+# when we know the size of our subarray 
+
 
 # here is a good example 
 # let's imagine we have an array and a value k  
@@ -39,7 +44,11 @@ for R in range(k,len(nums)) :  # we then loop through all the elements not insid
     best = max(best,currsum) 
     # each iteration will update the current sum if the best was ever higher it's safely stored 
     # if we find a better one best will become it 
-    
+
 
 
 """
+
+
+# moving on 
+# Dynamic Sliding Windows 
