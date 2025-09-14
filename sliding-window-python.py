@@ -90,4 +90,8 @@ for R in range(len(arr)) : # our right pointer will move by going through a for 
 """
 
 # the sliding winow is able to shift the right pointer one step at a time while shifting the left one when needed 
-#  
+
+
+# V1 DONE 
+
+# ARTICLE PART 
