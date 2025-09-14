@@ -52,3 +52,42 @@ for R in range(k,len(nums)) :  # we then loop through all the elements not insid
 
 # moving on 
 # Dynamic Sliding Windows 
+
+# we have no idea what the size of our subarray can be 
+
+# good example problem 
+
+# you have a integer array nums find the longest subarray with sum < s where s is an integer value 
+
+arr = [4,5,2,0,1,8,12,3,6,9] 
+s = 15 
+
+# to do this using sw we need to pointers L,R
+# we place L before the beginning of the arr and we place R at arr[0] (4)
+
+# we then process the window 
+# we then keep shifting R by one to the right each time as long as the sum is less than 15 (s) 
+
+# if the sum ever exceedes 15 then we start shrinking our window by moving our left pointer L 
+# the left pointer (L) initially points to before the beginning of the arr 
+
+
+# here is the pseudocode for it 
+
+"""
+L,currsum,bestsum = -1,0,0 
+for R in range(len(arr)) : # our right pointer will move by going through a for loop from the beginning of the array to the end 
+    currsum += arr[R] # we update our currsum each time R moves 
+    if currsum >= s : # at any point if our window breaks the condition and becomes bigger than s 
+        currsum -= arr[L]  # we shrink our window 
+        L += 1  # we shift our left pointer 
+
+    bestsum = max(bestsum,currsum)
+
+
+        
+
+"""
+
+# the sliding winow is able to shift the right pointer one step at a time while shifting the left one when needed 
+#  
