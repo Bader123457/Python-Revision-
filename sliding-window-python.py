@@ -29,3 +29,17 @@ second_sub = [3,-2,4,5,-1] # second window
 
 # to our sum we add the one that entered the window and subtract the one that left 
 # to every window we only perform 1 addition and 1 subtraction 
+
+# here is the psuedocode for it 
+"""
+currsum = best = sum(nums[0:k]) # we initalize our sum with the first window 
+for R in range(k,len(nums)) :  # we then loop through all the elements not inside our current window 
+    currsum = currsum + nums[R] - nums[R-k]  # we then slide our window 
+    # here we add the element that enetered the window and subtract the one that left 
+    best = max(best,currsum) 
+    # each iteration will update the current sum if the best was ever higher it's safely stored 
+    # if we find a better one best will become it 
+    
+
+
+"""
