@@ -2,6 +2,8 @@
 # they are very useful and transform time complexity from O(N^2) to O(N) 
 # there are 2 types of sliding window fixed and dynamic 
 
+# to check if the size of the sliding window is valid you do R-L+1 == k 
+
 # fixed sliding window :
 # when we know the size of our subarray 
 
@@ -111,23 +113,23 @@ Given an array arr[] and an integer k, we need to calculate the maximum sum of a
 Input  : arr[] = [5, 2, -1, 0, 3], k = 3
 """
 # here is my answer code 
-nums = [5, 2, -1, 0, 3] 
+nums = [5, 2, -1, 0, 3]
 k = 3
-L,R = 0,0 
-currsum = sum(nums[L:R-k+1]) 
-best = 0 
 
+L = 0
+currsum = 0
+best = float("-inf")
 
 for R in range(len(nums)):
-    
-    
-    best = max(currsum,best)
-    
-    currsum -= nums[L]
-    currsum += nums[R] 
-    L += 1 
-    
-print(best) 
+    currsum += nums[R]              # expand right
+    if R - L + 1 == k:              # window hits size k
+        best = max(best, currsum)   # record
+        currsum -= nums[L]          # slide: drop left
+        L += 1
+
+print(best)  # 6
+ 
+
 
 
     
