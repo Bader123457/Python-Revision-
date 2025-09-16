@@ -99,3 +99,36 @@ for R in range(len(arr)) : # our right pointer will move by going through a for 
 # check out this article 
 
 # https://www.geeksforgeeks.org/dsa/window-sliding-technique/
+
+
+
+# look at this sw problem for revision and this code 
+
+"""
+Example Problem - Maximum Sum of a Subarray with K Elements
+Given an array arr[] and an integer k, we need to calculate the maximum sum of a subarray having size exactly k.
+
+Input  : arr[] = [5, 2, -1, 0, 3], k = 3
+"""
+# here is my answer code 
+nums = [5, 2, -1, 0, 3] 
+k = 3
+L,R = 0,0 
+currsum = sum(nums[L:R-k+1]) 
+best = 0 
+
+
+for R in range(len(nums)):
+    
+    
+    best = max(currsum,best)
+    
+    currsum -= nums[L]
+    currsum += nums[R] 
+    L += 1 
+    
+print(best) 
+
+
+    
+
