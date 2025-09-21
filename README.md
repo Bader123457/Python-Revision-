@@ -12,3 +12,15 @@ This repository brings together concise explanations, working examples, and exer
 Each file focuses on a **core Python topic** so you can learn step by step, at your own pace.
 
 ---
+
+
+---
+
+## 🎯 Who Is This For?
+- 🧑‍🎓 **Absolute beginners** who want a clean, example-rich way to learn Python  
+- 💻 **Students** preparing for coding interviews or coursework  
+- 🛠️ **Anyone** revisiting Python basics and best practices
+
+You don’t need prior coding experience — only curiosity!
+
+---
