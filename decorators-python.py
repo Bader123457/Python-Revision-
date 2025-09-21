@@ -16,5 +16,20 @@ print(operate(inc,2)) # 3
 # here our parameter is the inc function we created 
 
 
+# the main takeaway here is that a function can take another function as an argument 
 
 
+# we can also define a function iside a function (nested functions)
+# ex:
+
+def print_message(message):
+    greeting = "hello" 
+
+    def printer():
+        print(greeting,message)
+
+    printer() 
+print_message("I am 19 years of age  ") 
+
+# output will be hello I am 19 years of age 
+ 
