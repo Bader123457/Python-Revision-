@@ -5,8 +5,13 @@
 # to use it:
 import re 
 
-patter = re.compile("^[A-Z]+$") # here we created a pattern to recognize 
+pattern = re.compile("^[A-Z]+$") # here we created a pattern to recognize 
 # what this means is that 
 # ^ means the beginning  
 # behind the [] is our wanted pattern 
 # A-Z means all capital characters from A to Z 
+
+# now to look for our pattern we do this 
+
+print(pattern.search("Hello World")) 
+print(pattern.search("HELLOWORLD"))
