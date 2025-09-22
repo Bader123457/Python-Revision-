@@ -8,7 +8,7 @@
 # 2 - next() 
 # together they are known as the iterator protocol 
 
-# let's look at examples 
+# let's look at an example 
 arr = [4,7,0] 
 
 iterator = iter(arr) # we created an iterator from our list 
