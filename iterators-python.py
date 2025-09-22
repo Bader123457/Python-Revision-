@@ -19,3 +19,12 @@ print(next(iterator)) # 7
 # third element 
 print(next(iterator)) # 0 
 
+"""
+Here, first we created an iterator from the list using the iter() method.
+And then used the next() function to retrieve the elements of the iterator in sequential order.
+"""
+
+# this exactly the same as doing 
+
+for num in arr:
+    print(num) 
