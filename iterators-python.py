@@ -28,3 +28,22 @@ And then used the next() function to retrieve the elements of the iterator in se
 
 for num in arr:
     print(num) 
+
+# let's look at another example 
+
+nums = [1,2,3,4,5] 
+
+# we can do 
+iterator2 = iter(nums) 
+print(next(iterator2))
+print(next(iterator2))
+print(next(iterator2))
+print(next(iterator2))
+print(next(iterator2))
+
+# or we can do 
+
+for number in nums:
+    print(number) 
+
+
