@@ -4,3 +4,9 @@
 # regular expression are a module in python known as re 
 # to use it:
 import re 
+
+patter = re.compile("^[A-Z]+$") # here we created a pattern to recognize 
+# what this means is that 
+# ^ means the beginning  
+# behind the [] is our wanted pattern 
+# A-Z means all capital characters from A to Z 
