@@ -14,3 +14,18 @@ print(all([True,True,True,True])) # True
 # all of them have to be True 
 
 
+
+# let's use it now 
+
+numbers = [-1,-2,-4,0,3,-7] 
+has_positive = False 
+for n in numbers :
+    if n > 0 :
+        has_positive = True 
+        break 
+
+# instead of doing this we can 
+
+has_positive = any(n>0 for n in numbers) 
+
+
