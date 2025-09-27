@@ -9,4 +9,8 @@ print(any([False,False,False])) # False
 # only 1 value has to be true 
 
 print(all([False,True,True,True])) # False 
-print(all([True,True,True,True])) # True  
+print(all([True,True,True,True])) # True 
+
+# all of them have to be True 
+
+
