@@ -29,3 +29,12 @@ for n in numbers :
 has_positive = any(n>0 for n in numbers) 
 
 
+
+# another manual way to do it 
+nums = [1,2,3,4,5,6,7,1] 
+counter = 0 
+for num in nums:
+    if num > 0 :
+        counter+= 1 
+
+print(counter == len(nums)) 
